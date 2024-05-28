@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
   <script type="text/javascript">
-    alert('XSS');
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CiAgICBhbGVydCgnWFNTJyk7CiAgPC9zY3JpcHQ+Cjwvc3ZnPg==" />
   </script>
 </svg>
